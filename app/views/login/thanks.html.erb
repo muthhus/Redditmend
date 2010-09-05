@@ -1,0 +1,8 @@
+<h1>Thanks, <%= @user.username %>!</h1>
+<p>When we've got lots of data, we'll recommend you some reddits.</p>
+
+<h2>Your reddits...</h2>
+
+<% @user.reddits.each do |reddit| %>
+  <a href="http://www.reddit.com<%= reddit.url %>"><%= reddit.name %></a><br />
+<% end %>

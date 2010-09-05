@@ -1,0 +1,7 @@
+<h1>Redditmend</h1>
+<p>HI! Please user the form below to login into Reddit and we'll send you a message of your recommendations.</p>
+
+<% form_tag :controller => 'login', :action => 'new' do %>
+  Username: <%= text_field_tag :username %>
+  Password: <%= password_field_tag :password %>
+<% end %>
